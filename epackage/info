@@ -1,0 +1,34 @@
+Package: lib-map-progress
+Section: extensions
+License: GPL-3+
+Depends: emacs (>= 22)
+Status: stable
+Compat:
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: Jonas Bernoulli <jonas@bernoul.li>
+Upstream-Bugs:
+Vcs-Type: git
+Vcs-Url: git://github.com/tarsius/map-progress.git
+Vcs-Browser: https://github.com/tarsius/map-progress
+Homepage:
+Wiki:
+Commentary: map-progress.el
+Description: library of mapping macros that report progress
+ This library defines mapping macros that report progress.
+ .
+ For many of the standard and CL mapping functions like `mapc' macros
+ like `mapc-with-progress-reporter' are defined here.  The arguments
+ have the same meaning as the respective arguments of the mapping
+ function or of `make-progress-reporter', which ever has an argument by
+ the same name.
+ .
+ Even when the original mapping function supports multiple sequences the
+ macros defined here only support one.  All of `make-progress-reporter's
+ arguments except for MESSAGE are optional.  This includes the starting
+ and final state arguments.
+ .
+ All standard mapping function with exactly two mandatory arguments are
+ supported by `map-with-progress-reporter', which can be used when no
+ progress reporting variant of that function has been defined here.  But
+ any optional arguments the original might have are not supported.

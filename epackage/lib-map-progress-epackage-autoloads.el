@@ -9,4 +9,4 @@
 (autoload 'maphash-with-progress-reporter       "map-progress" "" nil 'macro)
 (autoload 'map-keymap-internal-with-progress-reporter "map-progress" "" nil 'macro)
 (autoload 'with-message                         "map-progress" "" nil 'macro)
-(provide 'lib-map-progress-epkg-autoloads)
+(provide 'lib-map-progress-epackage-autoloads)
